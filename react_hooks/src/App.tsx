@@ -28,7 +28,6 @@ function App() {
             }
             return todo;
         });
-        console.log(newTodos);
         setTodos(newTodos);
     };
 

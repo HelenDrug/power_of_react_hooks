@@ -23,7 +23,7 @@ export const AddTodoForm: FC<AddTodoFormProps> = ({addTodo}) => {
 
     return (
         <form>
-            <Box sx={{display: "flex", marginTop: "1rem"}}>
+            <Box style={{display: "flex", marginTop: "1rem"}}>
                 <TextInput
                     style={{width: "550px", marginRight: "1rem"}}
                     placeholder='Add new todo...'

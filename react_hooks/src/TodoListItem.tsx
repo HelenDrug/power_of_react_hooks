@@ -10,7 +10,7 @@ interface TodoListItemProps {
 export const TodoListItem: FC<TodoListItemProps> = ({todo, toggleTodo}) => {
     return (
         <List.Item>
-            <Box sx={{display: "flex"}}>
+            <Box style={{display: "flex"}}>
                 <Checkbox
                     checked={todo.complete}
                     onChange={() => toggleTodo(todo)}
