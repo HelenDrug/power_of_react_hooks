@@ -1,5 +1,5 @@
-import {Box, Header, Text} from '@mantine/core';
-import {EstimationButton} from './EstimationButton';
+import {Box, Header} from '@mantine/core';
+import {Counter} from './Counter';
 
 interface AppHeaderProps {
     count: number
@@ -14,14 +14,13 @@ export const AppHeader = ({count}: AppHeaderProps) => {
                     paddingLeft: "1rem",
                     backgroundColor: "lightcyan",
                     alignItems: "center",
-                    width: "36.5%"
+                    width: "40.5%"
                 }}
                 children={<Box
                     style={{display: "flex", alignItems: "center", justifyContent: 'center'}}>
-                    <Text style={{paddingRight: "10px"}}>Number of unfinished tasks:</Text>
-                    <Text>{count}</Text>
-                    <EstimationButton count={count}/>
-                    {/* <ThemedButton/>*/}
+                    <Counter count={count}/>
+                    {/* <EstimationButton count={count}/>*/}
+                    {/*<ThemedButton/>*/}
                 </Box>}/>
 
     )
