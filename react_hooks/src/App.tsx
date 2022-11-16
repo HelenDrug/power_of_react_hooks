@@ -1,11 +1,11 @@
-import {TodoList} from "./TodoList";
-import {AddTodoForm} from "./AddTodoForm";
+import {TodoList} from "./components/TodoList";
+import {AddTodoForm} from "./components/AddTodoForm";
 import {AddTodo, Todo, ToggleTodo} from "./interfaces";
 import {MantineProvider} from "@mantine/core";
-import {AppHeader} from './AppHeader';
 import {NotificationsProvider} from '@mantine/notifications';
+import {AppHeader} from './components/AppHeader';
 
-function App() {
+export default function App() {
     let todos: Todo[] = [{text: "Buy groceries", complete: false}, {text: "Go to the gym", complete: false}];
 
 
@@ -37,5 +37,3 @@ function App() {
         </MantineProvider>
     );
 }
-
-export default App;

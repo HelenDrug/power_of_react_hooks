@@ -1,6 +1,6 @@
 import {FC} from "react";
 import {TodoListItem} from "./TodoListItem";
-import {Todo, ToggleTodo} from "./interfaces";
+import {Todo, ToggleTodo} from "../interfaces";
 import {List} from "@mantine/core";
 
 interface ToDoListProps {

@@ -1,6 +1,6 @@
 import {Box, Checkbox, List, Text} from "@mantine/core";
 import {FC} from "react";
-import {Todo, ToggleTodo} from "./interfaces";
+import {Todo, ToggleTodo} from "../interfaces";
 
 interface TodoListItemProps {
     todo: Todo;

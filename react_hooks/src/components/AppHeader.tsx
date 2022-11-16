@@ -14,14 +14,11 @@ export const AppHeader = ({count}: AppHeaderProps) => {
                     paddingLeft: "1rem",
                     backgroundColor: "lightcyan",
                     alignItems: "center",
-                    width: "40.5%"
+                    width: "42.5%",
                 }}
                 children={<Box
                     style={{display: "flex", alignItems: "center", justifyContent: 'center'}}>
                     <Counter count={count}/>
-                    {/* <EstimationButton count={count}/>*/}
-                    {/*<ThemedButton/>*/}
                 </Box>}/>
-
     )
 }

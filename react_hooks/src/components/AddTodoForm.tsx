@@ -1,6 +1,6 @@
 import {Box, Button, Text, TextInput} from "@mantine/core";
 import {FC, useState} from "react";
-import {AddTodo} from "./interfaces";
+import {AddTodo} from "../interfaces";
 
 interface AddTodoFormProps {
     addTodo: AddTodo;
@@ -25,7 +25,7 @@ export const AddTodoForm: FC<AddTodoFormProps> = ({addTodo}) => {
         <form>
             <Box style={{display: "flex", marginTop: "1rem"}}>
                 <TextInput
-                    style={{width: "550px", marginRight: "1rem"}}
+                    style={{width: "600px", marginRight: "1rem"}}
                     placeholder='Add new todo...'
                     value={text}
                     onChange={(e) => {
@@ -42,6 +42,8 @@ export const AddTodoForm: FC<AddTodoFormProps> = ({addTodo}) => {
             >
                 Please write a todo which you want to add
             </Text>
+            <Button style={{marginTop: "1rem"}} onClick={() => {
+            }}>Focus!</Button>
         </form>
     );
 };
