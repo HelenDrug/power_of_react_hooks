@@ -1,4 +1,4 @@
-import {useMemo} from 'react';
+import {useCallback, useMemo} from 'react';
 import {EstimationButton} from './EstimationButton';
 import {MegaEstimationButton} from './MegaEstimationButton';
 
@@ -13,14 +13,14 @@ export const Estimation = (props: EstimationButtonProps) => {
         return 4 * count
     }, [count]);
 
-    const handleMegaEstimation = () => {
-        console.log(Math.random());
-    }
+    const handleEstimationButtonClick = useCallback(() => {
+        console.log('Estimated value: 123 days');
+    }, [])
 
     return (
         <>
             <EstimationButton memoizedValue={memoizedValue}/>
-            <MegaEstimationButton handleClick={handleMegaEstimation}/>
+            <MegaEstimationButton handleClick={handleEstimationButtonClick}/>
         </>
 
     )
