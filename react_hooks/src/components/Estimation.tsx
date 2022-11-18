@@ -1,6 +1,4 @@
-import {useMemo} from 'react';
 import {EstimationButton} from './EstimationButton';
-import {MegaEstimationButton} from './MegaEstimationButton';
 
 interface EstimationButtonProps {
     count: number;
@@ -9,18 +7,11 @@ interface EstimationButtonProps {
 export const Estimation = (props: EstimationButtonProps) => {
     const {count} = props;
 
-    const memoizedValue = useMemo(() => {
-        return 4 * count
-    }, [count]);
-
-    const handleMegaEstimation = () => {
-        console.log(Math.random());
-    }
+    const memoizedValue = 4
 
     return (
         <>
             <EstimationButton memoizedValue={memoizedValue}/>
-            <MegaEstimationButton handleClick={handleMegaEstimation}/>
         </>
 
     )
